@@ -3,13 +3,9 @@
 int trocavalores(int a, int b){
     int temp = a;
     a = b;
-    temp = b;
+    b = temp;
 
-    printf("Digite os novos valores: ");
-
-    printf("Novos valores: ");
-    printf("%d ", a);
-    printf("%d", b);
+    printf("numeros alterados dentro da função: %d %d\n", a, b);
     
 }
 int main(){
@@ -22,5 +18,7 @@ int main(){
     printf("--- Alterando os valores ---\n");
     trocavalores(num1, num2);
 
+    
+    printf("Valores alterados no main: %d %d\n", num1, num2);
 
 }
