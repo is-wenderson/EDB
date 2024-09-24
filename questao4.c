@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int somarDiagonais(int matriz[][3], int n) {
+int somarDiagonal(int matriz[][3], int n) {
     int soma = 0;
     for (int i = 0; i < n; i++) {
         soma += matriz[i][i];
@@ -23,6 +23,6 @@ int main(){
         printf("\n");
     }
 
-    int soma = somarDiagonais(matriz, n);
+    int soma = somarDiagonal(matriz, n);
     printf("Soma das diagonais: %d\n", soma);
 }
